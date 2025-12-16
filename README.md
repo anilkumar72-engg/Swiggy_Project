@@ -1,120 +1,140 @@
-🍔 Swiggy Data Analysis | SQL & Power BI
+🍔 Swiggy Data Analysis | SQL, Star Schema & Power BI
 📌 Project Overview
 
-This project is an end-to-end data analysis case study on Swiggy food delivery data.
-The goal is to analyze business performance, customer behavior, and revenue trends using SQL for data processing and Power BI for visualization.
+This project is an end-to-end analytics case study on Swiggy food delivery data, focusing on data modeling, SQL transformation, and business visualization.
 
-The dataset used is a publicly available Swiggy dataset from Kaggle, used strictly for learning and analytical purposes.
+Raw transactional data was modeled into a Star Schema using SQL and then used in Power BI to build an interactive business performance dashboard.
+
+The dataset is a public Swiggy dataset from Kaggle, used strictly for educational and case-study purposes.
 
 🎯 Business Objectives
 
-Track overall business performance
+Design a reporting-ready data model
 
-Analyze orders and revenue trends over time
+Track orders, revenue, and customer behavior
 
-Understand customer payment preferences
+Enable fast and scalable analytics using a star schema
 
-Compare city-level performance
+Build an interactive dashboard for business decision-making
 
-Provide a decision-ready dashboard for stakeholders
+🧱 Data Modeling (Star Schema)
+
+A Star Schema was designed to optimize analytical queries and Power BI performance.
+
+⭐ Fact Table
+
+fact_orders
+
+order_id
+
+order_date
+
+total_amount
+
+quantity
+
+rating
+
+delivery_type
+
+payment_method_id
+
+customer_id
+
+restaurant_id
+
+city_id
+
+🌟 Dimension Tables
+
+dim_date – date, month, quarter, year
+
+dim_customer – customer_id, customer details
+
+dim_restaurant – restaurant, category
+
+dim_city – city, state
+
+dim_payment – payment method (Online, COD, Wallet)
+
+This structure enables:
+
+Faster aggregations
+
+Clean relationships in Power BI
+
+Scalable reporting design
+
+📁 SQL scripts for schema creation are available in the Data Modeling folder.
 
 🛠 Tools & Technologies
 
-SQL – Data cleaning, transformation, aggregation
+SQL – Data cleaning, transformation, star schema design
 
-Power BI – KPIs, DAX, interactive dashboards
+Power BI – DAX, KPIs, interactive dashboards
 
-Excel / CSV – Raw dataset format
+CSV / Excel – Raw dataset
 
-GitHub – Project version control
-
-📂 Dataset
-
-Source: Kaggle (Swiggy Dataset)
-
-Type: Food delivery transactional data
-
-Note: This is not internal Swiggy data. It is used for educational and case-study purposes only.
+GitHub – Version control
 
 🧹 Data Processing (SQL)
 
-Key steps performed using SQL:
+Cleaned raw transactional data
 
-Removed duplicates and handled missing values
+Normalized entities into dimension tables
 
-Created calculated fields for revenue and KPIs
+Loaded transformed data into fact and dimension tables
 
-Aggregated data by:
-
-Month
-
-City
-
-Payment Method
-
-Restaurant & Category
-
-Prepared clean tables for Power BI consumption
-
-📁 SQL queries are available in the SQL Queries folder.
+Validated relationships for analytical accuracy
 
 📊 Power BI Dashboard Features
-
-The Power BI dashboard includes:
-
-🔹 KPI Cards
+🔹 KPIs
 
 Total Orders
 
 Total Revenue
 
-Average Order Value (AOV)
+Average Order Value
 
 Average Rating
 
-🔹 Trend Analysis
+🔹 Analysis
 
-Monthly Orders Trend
+Monthly Orders & Revenue Trends
 
-Monthly Revenue Trend
+Payment Method Contribution
 
-🔹 Business Insights
+City-wise Performance
 
-Payment Method contribution (Online, COD, Wallet)
+Interactive filters & navigation
 
-City-wise performance analysis
-
-Interactive slicers and page navigation
-
-📸 Dashboard screenshots are available in the Dashboard folder.
+📸 Dashboard screenshots available in the Dashboard folder.
 
 📈 Key Insights
 
-Orders and revenue show seasonal fluctuations
+Online payments dominate revenue contribution
 
-Online payments contribute the major share of revenue
+Clear seasonality observed in monthly performance
 
-Certain months consistently outperform others
+Star schema improved report performance and clarity
 
-City-level filtering helps identify high-performing locations
+City-level analysis highlights high-performing regions
 
-🚀 How to Use This Project
+🚀 How to Use
 
-Review SQL queries to understand data preparation logic
+Review SQL scripts for star schema creation
 
-Open the Power BI .pbix file to explore the dashboard
+Explore fact & dimension relationships
 
-Use slicers to interact with city and time-based insights
+Open the Power BI file to interact with dashboards
 
 📌 Disclaimer
 
-This project is a case study built using publicly available data.
-It does not represent actual Swiggy internal analytics or confidential information.
+This project uses publicly available data for learning purposes only and does not represent internal Swiggy analytics.
 
 👤 About Me
 
-I am actively looking for entry-level Data Analyst / SQL / Power BI roles.
-Open to feedback, collaboration, and opportunities.
+Actively seeking entry-level Data Analyst / SQL / Power BI roles.
 
-🔗 LinkedIn: [your LinkedIn link]
-📧 Email: [your email]
+🔗 LinkedIn: https://www.linkedin.com/in/anilkumar-budda-5a240128b
+📧 Email: anilkumar.budda44@gmail.com
